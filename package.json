@@ -1,0 +1,20 @@
+{
+  "name": "ayush-project-food-delivery",
+  "version": "1.0.0",
+  "description": "Full-Stack Food Ordering & Real-Time Order Tracking Web Application",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm start --prefix server",
+    "server:dev": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "client:build": "npm run build --prefix client",
+    "seed": "npm run seed --prefix server",
+    "test:qa": "npm run test:qa --prefix server",
+    "test:menu": "npm run test:menu --prefix server",
+    "test:security": "npm run test:security --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.4"
+  }
+}
